@@ -25,13 +25,13 @@ class Program
             letter = "F";
         }
 
-        Console.Write($"Your letter grade is {letter}.");
+        Console.WriteLine($"Your letter grade is {letter}.");
 
         if (grade >= 70) {
-            Console.Write("Congrats, you passed the class!");
+            Console.WriteLine("Congrats, you passed the class!");
         }
         else {
-            Console.Write("You liked the class so much you wanted to take it twice.");
+            Console.WriteLine("You liked the class so much you wanted to take it twice.");
         }
 
 

@@ -15,21 +15,20 @@ class Program
         string guessString = Console.ReadLine();
         int guess = int.Parse(guessString);
         
-        do {
+        while(guess != magicNum) {
 
         if (guess < magicNum) {
             Console.Write("Higher. ");
         }
-        else {
+        else if (guess > magicNum) {
             Console.Write("Lower. ");
         }
 
         Console.Write("Guess again: ");
         string guessAgain = Console.ReadLine();
         guess = int.Parse(guessAgain);
-        
-        } while(guess != magicNum);
-        
+
+        } 
         Console.Write("That's correct!");
     }
 }

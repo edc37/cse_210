@@ -12,6 +12,7 @@ class Program
         string guessString = Console.ReadLine();
         float guess = float.Parse(guessString);
 
+        do {
         if (guess < magicNum) {
             Console.Write("Higher");
         }
@@ -21,5 +22,6 @@ class Program
         else {
             Console.Write("That's correct!");
         }
+        } while(guess != magicNum);
     }
 }

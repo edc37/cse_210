@@ -11,7 +11,7 @@ class Program
         //string magic = Console.ReadLine();
         //float magicNum = float.Parse(magic);
 
-        Console.Write("Guess: ");
+        Console.Write("Guess a number between 1 and 10: ");
         string guessString = Console.ReadLine();
         int guess = int.Parse(guessString);
         

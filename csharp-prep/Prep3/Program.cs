@@ -13,18 +13,19 @@ class Program
         float guess = float.Parse(guessString);
         
         do {
+            
         if (guess < magicNum) {
             Console.Write("Higher");
         }
-        else if (guess > magicNum) {
+        else (guess > magicNum) {
             Console.Write("Lower");
-        }
-        else {
-            Console.Write("That's correct!");
         }
         Console.Write("Guess again: ");
         string guessAgain = Console.ReadLine();
         guess = float.Parse(guessAgain);
+        
         } while(guess != magicNum);
+        
+        Console.Write("That's correct!");
     }
 }

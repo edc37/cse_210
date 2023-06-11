@@ -6,14 +6,14 @@ namespace Mindfullness
         // -----VARIABLES----- //
         protected string _startMessage = "";
         protected string _endMessage = "";
-        public int _activityTime = 0;
+        protected int _activityTime = 0;
 
         // -----TIMER----- //
         public void timer(int _activityTime)
         {
             Console.WriteLine("Starting Timer");
 
-            for (int i = 5; i > 0; i--)
+            for (int i = _activityTime; i > 0; i--)
             {
                 Console.Write(i);
                 Thread.Sleep(1000);
@@ -56,10 +56,11 @@ namespace Mindfullness
         }
 
         // -----START/END MESSAGE----- //
-        public Activity(string startMessage, string endMessage)
+        public Activity(string startMessage, string endMessage, int activityTime)
         {
             _startMessage = startMessage;
             _endMessage = endMessage;
+            _activityTime = activityTime;
         }
         public string GetStartMessage()
         {
@@ -68,6 +69,10 @@ namespace Mindfullness
         public string GetEndMessage()
         {
             return _endMessage;
+        }
+        public int GetActivityTime()
+        {
+            return _activityTime;
         }
     }
 }

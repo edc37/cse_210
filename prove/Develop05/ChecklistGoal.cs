@@ -3,9 +3,9 @@ namespace Goals
 {
     public class ChecklistGoal
     {
-        protected int bonusAmount = 0;
-        protected int timesCompleted = 0;
-        protected int timesToComplete = 0;
+        protected int bonusAmount;
+        protected int timesCompleted;
+        protected int timesToComplete;
 
         // METHODS //
         public ChecklistGoal(string name, string description, int points, int timesToComplete, int bonusAmount)
@@ -26,7 +26,7 @@ namespace Goals
         }
         public string ToString()
         {
-            
+
         }
 
     }

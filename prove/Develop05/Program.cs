@@ -1,9 +1,11 @@
 using System;
+namespace Goals {
 
-class Program
-{
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello Develop05 World!");
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello Develop05 World!");
+        }
     }
 }
